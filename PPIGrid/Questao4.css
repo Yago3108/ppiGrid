@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    
+}
+
+.container1 {
+    padding: 10px;
+}
+h1{
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 18px;
+    }
+    .container1 {
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: yellow;
+    }
+    .content{
+        display: grid;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+      .container2 {
+    margin:5px;
+       background-color: green;
+    }
+      .container3 {
+         margin:5px;
+        background-color: red;
+    }
+      .container4 { 
+           margin:5px;
+        background-color: dodgerblue;
+    }
+    .container5{
+           margin:5px;
+        background-color: green;
+    }
+    .container6{
+           margin:5px;
+        background-color: yellow;
+    }
+    .container7{
+           margin:5px;
+        background-color: dodgerblue;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) {
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 1fr 6fr 1fr;
+    }
+    .container1 {
+        margin:5px;
+       background-color: yellow;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .content{
+          display: grid;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+      .container2 {
+    margin:5px;
+       background-color: green;
+    }
+      .container3 {
+         margin:5px;
+        background-color: red;
+    }
+      .container4 { 
+           margin:5px;
+        background-color: dodgerblue;
+    }
+    .container5{
+           margin:5px;
+        background-color: green;
+    }
+    .container6{
+           margin:5px;
+        background-color: yellow;
+    }
+    .container7{
+           margin:5px;
+        background-color: dodgerblue;
+    }
+}
