@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    background:    linear-gradient(to top,#0b0125,#292929);
+}
+
+
+
+#html{
+    height: 100px;
+    width: auto;
+}
+.box-animado {
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top,#1b112c, #0c062b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 139, 0.6), 0 0 10px 5px rgba(0, 0, 128, 0.8), 0 0 20px 10px rgba(0, 0, 255, 0.7); /* Sombras iniciais */
+    animation: sombra-mudar 10s infinite ease-in-out;
+}
+@keyframes sombra-mudar {
+    0% {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 139, 0.6), 0 0 20px 5px rgba(0, 0, 128, 0.8), 0 0 30px 10px rgba(8, 8, 63, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 5px 0 rgba(48, 48, 155, 0.6), 0 0 20px 5px rgba(0, 0, 255, 0.8), 0 0 30px 10px rgba(15, 15, 83, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 139, 0.6), 0 0 20px 5px rgba(0, 0, 128, 0.8), 0 0 30px 10px rgba(15, 15, 77, 0.7);
+    }
+}
+.texto {
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+
+    opacity: 0; 
+    font-size: 20;
+    color: #ffffff;
+    transform: translateX(-100%); 
+    animation: slide-in 3s forwards;  
+}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%);  
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+.HTML{
+    display: flex;
+    background-color: #ffffff00;
+}
+@media screen and (max-width: 768px) {
+body{
+    display: grid;
+}
+.box-animado {
+    margin: auto;
+    width: auto;
+    height: auto;
+    background: linear-gradient(to top,#1b112c, #0c062b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 139, 0.6), 0 0 10px 5px rgba(0, 0, 128, 0.8), 0 0 20px 10px rgba(0, 0, 255, 0.7); /* Sombras iniciais */
+    animation: sombra-mudar 10s infinite ease-in-out;
+}
+#html{
+    height: 50px;
+    width: auto;
+}
+
+}
