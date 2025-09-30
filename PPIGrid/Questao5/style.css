@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    justify-content: center;
     background:    linear-gradient(to top,#0b0125,#292929);
+    height: 100%;
 }
 
 
@@ -41,6 +41,7 @@ body {
     }
 }
 .texto {
+    
     width: 300px;
     align-self: center;
     justify-self: center;
@@ -61,10 +62,68 @@ body {
         transform: translateX(0); 
     }
 }
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);  
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
 .HTML{
     display: flex;
     background-color: #ffffff00;
 }
+.botao{
+    margin-left: 100px;
+    justify-items: center;
+    align-content: center;
+    width: 450px;
+    height: 60px;
+    color: #ffffff;
+    background:linear-gradient(to right,#302a68,#165181);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.conteudo h1,p,li{
+       padding-top: 10px;
+    color: #ffffff;
+}
+.conteudo .titulo{
+    justify-self: baseline;
+    margin-left: 60px;
+}
+.conteudo ul{
+ 
+    margin: 50px;
+}
+
+.conteudo .grid{
+justify-self: baseline;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.conteudo {
+    opacity: 0;
+    justify-items: center;
+    align-content: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; 
+  padding: 0 15px;
+  
+}
+
+.conteudo.expanded {
+  max-height: 500px; 
+  padding: 10px 15px 20px 15px; 
+    transform: translateY(-20px); 
+    animation: slide-down 3s forwards;  
+}
+
 @media screen and (max-width: 768px) {
 body{
     display: grid;

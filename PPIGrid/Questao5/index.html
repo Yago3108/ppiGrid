@@ -15,7 +15,54 @@
                  usada para estruturar e apresentar conteúdo através de um navegador web</p></div>
        
     </div>
-    <div class="botao"><h1>MAIS DETALHES</h1></div>
+        <div class="botao" ><h1 class="botao-text">MAIS DETALHES</h1></div>
+           <div class="conteudo">
+            <h1 class="titulo">Elementos básicos do HTML 5</h1>
+            <br>
+            <div class="grid">
+                <div>
+            <ul>
+            <li> <h1>DIV</h1>
+                <br>
+                    Elemento que pode <br> 
+                    guardar outros elementos
+            </li>
+            <li><h1>P</h1>
+            <br>
+            Elemento para textos <br>
+             em HTML
+            </li>
+            <li>
+                <h1>H1</h1>
+                <br>
+                Elemento para títulos que <br>
+                se extende para h2,h3...
+            </li>
+            </ul>
+                </div>
+                <div>
+            <ul>
+            <li><h1>UL</h1>
+            <br>
+            Elemento para criar <br>
+             listas não ordenadas em HTML
+            </li>
+            <li><h1>LI</h1>
+            <br>
+            Elemento que é colocado <br>
+            como item da lista
+            </li>
+            <li><h1>OL</h1>
+            <br>
+            Elemento para criar <br>
+            listas ordenadas em HTML
+            </li>
+            </ul>
+                </div>
+            </div>
+        
+</div>
+
     
     <div class="HTML" >
         <div class="box-animado"><img src="css-3.png" alt="html" id="html"></div>
@@ -27,6 +74,76 @@
                  como cores, fontes, tamanhos e a disposição de elementos na tela, papel ou em outros meios</p></div>
        
     </div>
- 
+      <div class="botao" ><h1 class="botao-text">MAIS DETALHES</h1></div>
+           <div class="conteudo">
+            <h1 class="titulo">Características básicas CSS 3</h1>
+            <br>
+            <div class="grid">
+                <div>
+            <ul>
+            <li> <h1>Background</h1>
+                <br>
+                    Característica que <br> 
+                    altera o fundo do elemento
+            </li>
+            <li><h1>Padding</h1>
+            <br>
+             Característica que <br>
+             altera o espaçamento dentro <br>
+             do elemento
+            </li>
+            <li>
+                <h1>Margin</h1>
+                <br>
+                Característica que <br>
+                altera o espaçamento <br>
+                do elemento no body
+            </li>
+            </ul>
+                </div>
+                <div>
+            <ul>
+            <li><h1>Color</h1>
+            <br>
+            Característica que <br>
+            altera a cor dos elemtos
+            </li>
+            <li><h1>Display</h1>
+            <br>
+            Característica que <br>
+            altera a forma que o elemento <br>
+            é mostrado
+            </li>
+            <li><h1>Align-items</h1>
+            <br>
+            Característica que <br>
+            alinha os itens  do elemento 
+            </li>
+            </ul>
+                </div>
+            </div>
+        
+</div>
+    
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var buttons = document.querySelectorAll('.botao');
+          buttons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                 var buttonTextElement = button.querySelector('.botao-text');
+                  var content = this.nextElementSibling;
+                  if (content && content.classList.contains('conteudo')) {
+                      content.classList.toggle('expanded');
+                  }
+                    if (content.classList.contains('expanded')) {
+                 buttonTextElement.textContent = 'MENOS DETALHES';
+                 
+          } else {
+            buttonTextElement.textContent = 'MAIS DETALHES';
+          }
+              });
+          });
+        });
+    </script>
 </body>
 </html>
