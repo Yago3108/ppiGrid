@@ -1,0 +1,11 @@
+Nível 14 – order
+
+Introduz a propriedade order, usada para mudar a posição dos itens dentro do flex container sem alterar o HTML.
+Cada sapo (flex item) pode receber um valor de order.
+Itens com menor valor aparecem primeiro; por padrão todos têm order: 0.
+
+Nível 18 – flex-wrap
+
+Introduz a propriedade flex-wrap, aplicada ao container.
+Com flex-wrap: wrap;, os itens que não cabem em uma linha quebram para a próxima.
+Isso organiza os sapos em várias linhas, permitindo alinhar cada um com sua lily pad.
